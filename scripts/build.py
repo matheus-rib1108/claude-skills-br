@@ -82,7 +82,7 @@ Passo a passo com imagens: [COMO-INSTALAR.md](../../COMO-INSTALAR.md).
 def zip_dir(target, folders):
     with zipfile.ZipFile(target, "w", zipfile.ZIP_STORED) as z:
         for folder in folders:
-            for p in sorted(folder.rglob("*")):
+            for p in sorted(folder.rglob("*"), key=lambda q: q.as_posix()):
                 if p.is_file() and "__pycache__" not in p.parts:
                     info = zipfile.ZipInfo(p.relative_to(folder.parent).as_posix(), (2026, 1, 1, 0, 0, 0))
                     info.compress_type = zipfile.ZIP_STORED
