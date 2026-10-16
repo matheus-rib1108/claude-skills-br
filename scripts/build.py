@@ -86,6 +86,8 @@ def zip_dir(target, folders):
                 if p.is_file() and "__pycache__" not in p.parts:
                     info = zipfile.ZipInfo(p.relative_to(folder.parent).as_posix(), (2026, 1, 1, 0, 0, 0))
                     info.compress_type = zipfile.ZIP_STORED
+                    info.create_system = 3  # igual no Windows e no Linux
+                    info.external_attr = 0o644 << 16
                     z.writestr(info, p.read_bytes())
 
 
