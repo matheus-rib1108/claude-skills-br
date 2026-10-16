@@ -1,0 +1,49 @@
+{
+  "name": "claude-skills-br",
+  "owner": {
+    "name": "matheus-rib1108"
+  },
+  "metadata": {
+    "description": "Skills para Claude em português do Brasil: estudo, vendas locais, redes sociais, sites e segurança.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "skills-br",
+      "description": "Todas as skills do claude-skills-br.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/abordagem-whatsapp-vendas",
+        "./skills/agent-builder",
+        "./skills/assistente-voz-jarvis",
+        "./skills/cardapio-digital",
+        "./skills/claude-chats",
+        "./skills/comparador-produtos-br",
+        "./skills/cost-estimator",
+        "./skills/curriculo-jovem-aprendiz",
+        "./skills/github-helper",
+        "./skills/humanizar-texto-pt",
+        "./skills/legal-compliance",
+        "./skills/legenda-instagram-negocio",
+        "./skills/matematica-passo-a-passo",
+        "./skills/minecraft-construcoes",
+        "./skills/orcamento-servicos",
+        "./skills/organizador-de-estudos",
+        "./skills/pc-control",
+        "./skills/photo-editor",
+        "./skills/projeto-senai-desafio",
+        "./skills/prospeccao-local-br",
+        "./skills/publicar-skills-github",
+        "./skills/revisao-flashcards",
+        "./skills/session-radar",
+        "./skills/site-fortress",
+        "./skills/skill-hunter",
+        "./skills/trabalho-escolar",
+        "./skills/tutor-sql",
+        "./skills/video-link",
+        "./skills/video-maker"
+      ]
+    }
+  ]
+}

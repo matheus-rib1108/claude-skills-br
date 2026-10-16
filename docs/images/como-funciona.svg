@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Como uma skill funciona</title>
+  <desc id="d">O Claude carrega só o nome e a descrição de cada skill. Quando o seu pedido combina com uma descrição, ele lê as instruções completas e segue o passo a passo.</desc>
+  <style>
+    text{font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:#1F1B16}
+    .h{font-size:22px;font-weight:700}
+    .s{font-size:15px}
+    .m{font-size:13px;font-family:Consolas,"Courier New",monospace}
+    .n{font-size:14px;font-weight:700;fill:#FFF8EE}
+  </style>
+  <rect width="960" height="400" fill="#F6F1E7"/>
+  <text x="40" y="52" class="h">Como uma skill funciona</text>
+  <text x="40" y="78" class="s" fill="#5A5248">O Claude não lê tudo de uma vez: ele só abre as instruções quando o assunto aparece.</text>
+
+  <!-- passo 1 -->
+  <rect x="40" y="110" width="260" height="240" rx="14" fill="#FFFDF8" stroke="#D8CDBB"/>
+  <circle cx="72" cy="142" r="16" fill="#C2502E"/><text x="67" y="147" class="n">1</text>
+  <text x="98" y="148" class="s" font-weight="700">Sempre carregado</text>
+  <text x="60" y="186" class="m">name: tutor-sql</text>
+  <text x="60" y="208" class="m">description: Professor</text>
+  <text x="60" y="226" class="m">de SQL/MySQL... Use</text>
+  <text x="60" y="244" class="m">quando mandar um</text>
+  <text x="60" y="262" class="m">script SQL...</text>
+  <text x="60" y="320" class="s" fill="#5A5248">Poucas linhas por skill.</text>
+
+  <path d="M312 230 h46" stroke="#1F1B16" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- passo 2 -->
+  <rect x="370" y="110" width="240" height="240" rx="14" fill="#FFFDF8" stroke="#D8CDBB"/>
+  <circle cx="402" cy="142" r="16" fill="#C2502E"/><text x="397" y="147" class="n">2</text>
+  <text x="428" y="148" class="s" font-weight="700">Você pede</text>
+  <rect x="390" y="176" width="200" height="64" rx="10" fill="#E9E1D2"/>
+  <text x="404" y="202" class="s">"Por que esse JOIN</text>
+  <text x="404" y="222" class="s">não funciona?"</text>
+  <text x="390" y="290" class="s" fill="#5A5248">O pedido combina com</text>
+  <text x="390" y="310" class="s" fill="#5A5248">a descrição do tutor-sql.</text>
+
+  <path d="M622 230 h46" stroke="#1F1B16" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- passo 3 -->
+  <rect x="680" y="110" width="240" height="240" rx="14" fill="#FFFDF8" stroke="#D8CDBB"/>
+  <circle cx="712" cy="142" r="16" fill="#2F6B4F"/><text x="707" y="147" class="n">3</text>
+  <text x="738" y="148" class="s" font-weight="700">Instruções completas</text>
+  <text x="700" y="190" class="s">• aponta a linha do erro</text>
+  <text x="700" y="216" class="s">• mostra a mensagem real</text>
+  <text x="700" y="242" class="s">• corrige só o necessário</text>
+  <text x="700" y="268" class="s">• testa a query</text>
+  <text x="700" y="320" class="s" fill="#5A5248">Lido só agora.</text>
+
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1F1B16"/></marker></defs>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Três jeitos de instalar</title>
+  <desc id="d">No claude.ai ou no app: baixe o zip e envie em Configurações, Capacidades, Skills. No Claude Code: descompacte em .claude/skills, ou use npx skills add, ou plugin marketplace add.</desc>
+  <style>
+    text{font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:#1F1B16}
+    .h{font-size:22px;font-weight:700}
+    .t{font-size:17px;font-weight:700}
+    .s{font-size:14px}
+    .m{font-size:12.5px;font-family:Consolas,"Courier New",monospace}
+  </style>
+  <rect width="960" height="420" fill="#F6F1E7"/>
+  <text x="40" y="52" class="h">Três jeitos de instalar</text>
+
+  <rect x="40" y="80" width="280" height="300" rx="14" fill="#FFFDF8" stroke="#D8CDBB"/>
+  <rect x="40" y="80" width="280" height="8" rx="4" fill="#C2502E"/>
+  <text x="60" y="122" class="t">claude.ai ou app</text>
+  <text x="60" y="160" class="s">1. Baixe o .zip da skill</text>
+  <text x="60" y="188" class="s">2. Configurações</text>
+  <text x="76" y="210" class="s">→ Capacidades → Skills</text>
+  <text x="60" y="238" class="s">3. "Enviar skill" e escolha</text>
+  <text x="76" y="260" class="s">o arquivo .zip</text>
+  <text x="60" y="288" class="s">4. Ligue a chave da skill</text>
+  <text x="60" y="350" class="s" fill="#5A5248">Funciona no celular também.</text>
+
+  <rect x="340" y="80" width="280" height="300" rx="14" fill="#FFFDF8" stroke="#D8CDBB"/>
+  <rect x="340" y="80" width="280" height="8" rx="4" fill="#2F6B4F"/>
+  <text x="360" y="122" class="t">Claude Code: copiar</text>
+  <text x="360" y="160" class="s">Descompacte o zip dentro de</text>
+  <rect x="360" y="174" width="240" height="30" rx="6" fill="#1F1B16"/>
+  <text x="372" y="194" class="m" fill="#F6F1E7">~/.claude/skills/</text>
+  <text x="360" y="232" class="s">Fica assim:</text>
+  <text x="360" y="258" class="m">~/.claude/skills/</text>
+  <text x="376" y="278" class="m">tutor-sql/</text>
+  <text x="392" y="298" class="m">SKILL.md</text>
+  <text x="360" y="350" class="s" fill="#5A5248">Vale para todos os projetos.</text>
+
+  <rect x="640" y="80" width="280" height="300" rx="14" fill="#FFFDF8" stroke="#D8CDBB"/>
+  <rect x="640" y="80" width="280" height="8" rx="4" fill="#3B5B8C"/>
+  <text x="660" y="122" class="t">Claude Code: comando</text>
+  <text x="660" y="160" class="s">Todas de uma vez:</text>
+  <rect x="660" y="172" width="240" height="30" rx="6" fill="#1F1B16"/>
+  <text x="670" y="192" class="m" fill="#F6F1E7">npx skills add</text>
+  <text x="660" y="220" class="m">matheus-rib1108/claude-skills-br</text>
+  <text x="660" y="240" class="s">Ou, dentro do Claude Code:</text>
+  <rect x="660" y="248" width="240" height="30" rx="6" fill="#1F1B16"/>
+  <text x="670" y="268" class="m" fill="#F6F1E7">/plugin marketplace add</text>
+  <text x="660" y="300" class="m">matheus-rib1108/claude-skills-br</text>
+  <text x="660" y="350" class="s" fill="#5A5248">Atualiza fácil depois.</text>
+</svg>

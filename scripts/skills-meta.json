@@ -1,0 +1,237 @@
+{
+  "categorias": ["Estudo", "Vendas e negócio local", "Redes sociais, foto e vídeo", "Sites e programação", "Segurança e lei", "Produtividade e PC", "Jogos", "Criar e publicar skills"],
+  "skills": {
+    "matematica-passo-a-passo": {
+      "categoria": "Estudo", "titulo": "Matemática passo a passo",
+      "resumo": "Resolve exercícios de matemática do ensino médio e técnico explicando cada passo, com desenho da figura e conferência da conta.",
+      "muda": "O Claude passa a desenhar o triângulo, a escada ou a sombra antes de calcular, diz qual fórmula usar e por quê, faz uma operação por linha e confere o resultado.",
+      "exemplos": ["Resolve essa lista de Pitágoras e explica como se eu nunca tivesse visto", "Por que no seno é oposto sobre hipotenusa?", "Me ajuda nessa questão de porcentagem (foto)"],
+      "antes": "Resposta direta: x = 5.", "depois": "Figura com os lados marcados, explicação de quais são catetos, conta linha a linha e a resposta em destaque com unidade.",
+      "dicas": ["Mande foto nítida, uma questão por vez se a lista for grande.", "Peça \"me explica o porquê\" para ver a ideia antes da fórmula."]
+    },
+    "revisao-flashcards": {
+      "categoria": "Estudo", "titulo": "Revisão com flashcards",
+      "resumo": "Transforma a matéria em resumo de uma página, flashcards, quiz com gabarito comentado e plano de revisão até a prova.",
+      "muda": "Em vez de só resumir, o Claude monta material de prova: perguntas que exigem raciocínio, quiz no estilo do professor e repetição espaçada até a data.",
+      "exemplos": ["Tenho prova de biologia sexta, faz flashcards dessa foto do caderno", "Me testa sobre Revolução Francesa, uma pergunta por vez", "Exporta os flashcards para o Anki"],
+      "antes": "Um resumo comprido.", "depois": "Resumo de 1 página + 20 flashcards em CSV para o Anki + quiz + plano dia a dia.",
+      "dicas": ["Diga a data da prova para ele montar o plano.", "Os erros do quiz viram flashcards novos automaticamente."]
+    },
+    "trabalho-escolar": {
+      "categoria": "Estudo", "titulo": "Trabalho escolar",
+      "resumo": "Ajuda em trabalhos de escola, SESI e SENAI: pesquisa, resumo, cartaz, slides, roteiro de fala cronometrado e perguntas do professor.",
+      "muda": "O Claude pergunta o tipo de entrega e o tempo de fala, divide o roteiro por integrante e ensaia com você as perguntas prováveis.",
+      "exemplos": ["Trabalho sobre Pop Art, 5 minutos, 4 pessoas", "O que eu falo sobre esse cartaz (foto)?", "Faz os slides do seminário sobre energia solar"],
+      "antes": "Um texto longo copiado de site.", "depois": "Resumo com fontes, roteiro dividido por pessoa com tempo de cada parte e 5 perguntas com respostas.",
+      "dicas": ["Mande o enunciado ou os critérios do professor.", "Peça \"mais curto\" ou \"1 minuto\" para ajustar o tamanho da fala."]
+    },
+    "tutor-sql": {
+      "categoria": "Estudo", "titulo": "Tutor de SQL",
+      "resumo": "Professor de SQL/MySQL em português: corrige scripts, explica comandos e cria missões no seu próprio banco de exemplo.",
+      "muda": "O Claude aponta a linha exata do erro com a mensagem real do MySQL, cobra boas práticas e cria exercícios com dica antes da resposta.",
+      "exemplos": ["Por que esse JOIN não funciona? (script)", "Senha é CHAR ou VARCHAR?", "Me dá 5 missões no meu banco de filmes"],
+      "antes": "O script inteiro reescrito sem explicação.", "depois": "A linha errada apontada, a correção, o porquê em 3 linhas e a query testada.",
+      "dicas": ["Cole o CREATE TABLE das suas tabelas para as missões usarem seus dados.", "Diga \"só a dica\" para tentar sozinho primeiro."]
+    },
+    "organizador-de-estudos": {
+      "categoria": "Estudo", "titulo": "Organizador de estudos",
+      "resumo": "Monta um cronograma de estudos que cabe na sua semana real, com provas, Pomodoro, revisão espaçada e checagem semanal.",
+      "muda": "O Claude primeiro mapeia o que já ocupa seu dia e só depois encaixa estudo; corta metas quando não cabe.",
+      "exemplos": ["Faz meu cronograma: escola de manhã, SENAI à tarde", "Tenho 3 provas semana que vem, como divido?", "Exporta para o Google Agenda"],
+      "antes": "Um cronograma bonito e impossível.", "depois": "Grade da semana com blocos de 25 min, revisões e um dia leve, exportável para Notion, Obsidian ou Agenda.",
+      "dicas": ["Seja honesto sobre o horário em que você rende mais.", "Faça a checagem de domingo: 10 minutos ajustam a semana toda."]
+    },
+    "curriculo-jovem-aprendiz": {
+      "categoria": "Estudo", "titulo": "Currículo Jovem Aprendiz",
+      "resumo": "Currículo de uma página para primeiro emprego, Jovem Aprendiz ou estágio, usando cursos e projetos como experiência, mais carta e treino de entrevista.",
+      "muda": "O Claude transforma projetos da escola e do SENAI em experiência real no currículo, tira dados que não devem aparecer e treina a entrevista com você.",
+      "exemplos": ["Faz meu currículo para Jovem Aprendiz", "Escreve meu LinkedIn", "Me treina para a entrevista, uma pergunta por vez"],
+      "antes": "\"Sou proativo e dinâmico\" e campo de experiência vazio.", "depois": "Projetos com verbo e resultado, cursos com carga horária e um PDF de uma página.",
+      "dicas": ["Liste tudo o que já fez, até ajudar no negócio da família.", "Não coloque CPF, RG nem endereço completo."]
+    },
+    "prospeccao-local-br": {
+      "categoria": "Vendas e negócio local", "titulo": "Prospecção local",
+      "resumo": "Acha negócios da sua cidade que precisam do seu serviço (site, cardápio, Instagram), dá nota de oportunidade e escreve a mensagem de abordagem.",
+      "muda": "O Claude pesquisa por bairro, confere cada lead antes de entregar e prioriza quem tem movimento mas não tem presença digital.",
+      "exemplos": ["Acha 15 pizzarias de Maringá sem cardápio digital", "Quais lanchonetes só vendem pelo iFood?", "Faz a mensagem para os 5 melhores leads"],
+      "antes": "Uma lista do Google com franquias e lugares fechados.", "depois": "Tabela priorizada com o que falta em cada negócio, status Verificado e mensagem pronta.",
+      "dicas": ["Diga qual serviço você vende: isso muda quem é um bom lead.", "Use com a skill abordagem-whatsapp-vendas para o próximo passo."]
+    },
+    "abordagem-whatsapp-vendas": {
+      "categoria": "Vendas e negócio local", "titulo": "Abordagem por WhatsApp",
+      "resumo": "Escreve a primeira mensagem de venda, o acompanhamento e as respostas para objeções, sem cara de spam.",
+      "muda": "O Claude usa um fato real do negócio na mensagem, gera duas versões e para depois de um lembrete, sem insistir.",
+      "exemplos": ["Escreve a mensagem para a Pizzaria X oferecendo cardápio digital", "O cliente disse que tá caro, o que respondo?", "Faz o follow-up, ele não respondeu"],
+      "antes": "\"Olá! Tudo bem? 😊 Trabalho com marketing digital...\"", "depois": "Cinco linhas com algo verdadeiro sobre o negócio, um benefício concreto e uma pergunta simples.",
+      "dicas": ["Mande um exemplo pronto: vende mais que explicar.", "Você sempre confere o texto antes de enviar."]
+    },
+    "cardapio-digital": {
+      "categoria": "Vendas e negócio local", "titulo": "Cardápio digital",
+      "resumo": "Cria cardápio digital leve com pedido pelo WhatsApp, horário aberto/fechado e QR code de mesa, para publicar de graça.",
+      "muda": "O Claude monta uma página rápida no 4G, com os itens num JSON que o dono edita sozinho, e gera o QR code para imprimir.",
+      "exemplos": ["Faz o cardápio digital da lanchonete com essa foto do cardápio", "Adiciona tamanhos e bordas nas pizzas", "Gera o QR code para as mesas"],
+      "antes": "PDF do cardápio no WhatsApp.", "depois": "Página com carrinho que manda o pedido pronto pelo WhatsApp do restaurante.",
+      "dicas": ["Peça para o dono conferir os preços antes de publicar.", "Cadastre o link no Google Meu Negócio e na bio do Instagram."]
+    },
+    "orcamento-servicos": {
+      "categoria": "Vendas e negócio local", "titulo": "Orçamento de serviços",
+      "resumo": "Calcula quanto cobrar por site, cardápio, Instagram ou vídeo e monta proposta com 3 pacotes e contrato simples.",
+      "muda": "O Claude mostra a conta do valor da hora, pesquisa preços de hoje e compara com o mercado em vez de chutar um número.",
+      "exemplos": ["Quanto cobro por um cardápio digital?", "Faz a proposta para gerenciar o Instagram da pizzaria", "Preciso de um contrato simples"],
+      "antes": "\"Cobra uns R$ 300\".", "depois": "Conta explicada, 3 pacotes, mensalidade e proposta de uma página pronta para mandar.",
+      "dicas": ["Sempre deixe claro o que NÃO está incluso.", "Menor de idade precisa do responsável para assinar contrato."]
+    },
+    "comparador-produtos-br": {
+      "categoria": "Vendas e negócio local", "titulo": "Comparador de produtos",
+      "resumo": "Compara produtos de lojas brasileiras (Pichau, Kabum, Terabyte, Amazon, Mercado Livre) com tabela, ranking e link certo.",
+      "muda": "O Claude define critérios antes, abre a página da loja para confirmar preço e confere se o link leva ao modelo certo.",
+      "exemplos": ["Qual a melhor cadeira gamer até R$ 1.200 na Pichau?", "Compara esses 3 headsets (print)", "Top 5 SSD custo-benefício"],
+      "antes": "Opiniões genéricas e preço de memória.", "depois": "Veredito, tabela por critério, top 3 com preço PIX consultado na data e alertas.",
+      "dicas": ["Diga quanto tempo usa por dia e para quê.", "Preço muda: confira a data da consulta."]
+    },
+    "legenda-instagram-negocio": {
+      "categoria": "Redes sociais, foto e vídeo", "titulo": "Instagram de negócio local",
+      "resumo": "Legendas, ideias de post, roteiro de Reels e calendário do mês para o Instagram de um negócio local, com a voz do dono.",
+      "muda": "O Claude guarda o perfil do cliente, alterna tipos de post e escreve legendas curtas com chamada para ação e hashtags da cidade.",
+      "exemplos": ["Calendário de outubro para a pizzaria", "Legenda para essa foto do hambúrguer", "Roteiro de Reels de 20 segundos mostrando o forno"],
+      "antes": "\"Venha conferir nossas delícias! 🍕🔥 #food #pizza #love\"", "depois": "Primeira linha forte, 3 linhas com a voz do dono, CTA para o WhatsApp e hashtags locais.",
+      "dicas": ["Preencha o perfil do cliente uma vez e reaproveite.", "Nunca publique promoção sem o dono aprovar."]
+    },
+    "humanizar-texto-pt": {
+      "categoria": "Redes sociais, foto e vídeo", "titulo": "Humanizar texto",
+      "resumo": "Tira a \"cara de IA\" de textos em português, mantendo o sentido e a sua voz.",
+      "muda": "O Claude corta conectivos de redação, exageros e travessões, varia o tamanho das frases e mantém suas gírias.",
+      "exemplos": ["Deixa esse texto com cara de que eu escrevi", "Revisa essa legenda", "Humaniza meu trabalho sem mudar o conteúdo"],
+      "antes": "\"Além disso, é crucial ressaltar que...\"", "depois": "Frases diretas, do jeito que você fala.",
+      "dicas": ["Mande um texto seu de exemplo para ele copiar o estilo.", "Para trabalho escolar, só muda a forma: fontes e conteúdo ficam."]
+    },
+    "photo-editor": {
+      "categoria": "Redes sociais, foto e vídeo", "titulo": "Editor de fotos",
+      "resumo": "Melhora fotos no seu computador: luz, cor, nitidez, ampliação com IA, remoção de fundo e recorte para Instagram ou site.",
+      "muda": "O Claude edita a foto de verdade com Python (Pillow, OpenCV, rembg) e mostra antes e depois.",
+      "exemplos": ["Melhora essa foto da pizza para o Instagram", "Tira o fundo do produto", "Recorta em 4:5 para o feed"],
+      "antes": "Dicas de como editar no celular.", "depois": "Arquivo editado pronto, com comparação antes/depois.",
+      "dicas": ["Instale uma vez: pip install pillow opencv-contrib-python-headless numpy rembg onnxruntime", "Fotos com boa luz natural rendem mais que qualquer filtro."]
+    },
+    "video-link": {
+      "categoria": "Redes sociais, foto e vídeo", "titulo": "Assistir vídeo por link",
+      "resumo": "Você manda o link (Instagram, TikTok, YouTube) e o Claude \"assiste\": baixa, transcreve a fala e tira quadros da imagem.",
+      "muda": "O Claude consegue resumir, anotar ou copiar a ideia de um vídeo que antes ele não conseguia ver.",
+      "exemplos": ["O que esse reels ensina? (link)", "Resume esse vídeo do YouTube em tópicos", "Copia a ideia desse TikTok para a pizzaria"],
+      "antes": "\"Não consigo assistir vídeos.\"", "depois": "Transcrição, quadros principais e resumo do vídeo.",
+      "dicas": ["Precisa de yt-dlp, faster-whisper e ffmpeg instalados.", "Só use com vídeos públicos ou seus."]
+    },
+    "video-maker": {
+      "categoria": "Redes sociais, foto e vídeo", "titulo": "Fazer vídeo",
+      "resumo": "Faz vídeos .mp4 de verdade: Reels, TikTok, propaganda, explicativo com narração e legenda, slideshow de fotos.",
+      "muda": "O Claude escreve o roteiro, monta as cenas em código (HyperFrames ou Remotion) e renderiza o arquivo final.",
+      "exemplos": ["Faz um reels de 15 s do cardápio novo", "Vídeo explicando meu projeto do SENAI com legenda", "Anima esse texto para o Stories"],
+      "antes": "Só o roteiro em texto.", "depois": "Arquivo .mp4 pronto em 9:16 ou 16:9.",
+      "dicas": ["Diga o formato (Reels, YouTube) e a duração.", "Mande fotos e logo do cliente para usar nas cenas."]
+    },
+    "cost-estimator": {
+      "categoria": "Sites e programação", "titulo": "Quanto custa",
+      "resumo": "Pesquisa o preço de hoje para colocar um site ou app no ar (hospedagem, banco, domínio, taxas de Pix e cartão) e recomenda o melhor custo-benefício.",
+      "muda": "O Claude não usa preço de memória: abre a página de preços, cita a fonte e compara o grátis com o pago.",
+      "exemplos": ["Quanto custa colocar o site da pizzaria no ar?", "Vercel ou Netlify, qual sai mais barato?", "Qual a taxa do Mercado Pago no Pix?"],
+      "antes": "\"Deve custar uns R$ 50 por mês.\"", "depois": "Tabela com cada item, preço de hoje, link da fonte e a recomendação.",
+      "dicas": ["Pergunte antes de escolher hospedagem.", "Repita a consulta antes de fechar orçamento com cliente."]
+    },
+    "assistente-voz-jarvis": {
+      "categoria": "Sites e programação", "titulo": "Assistente de voz (JARVIS)",
+      "resumo": "Guia para construir seu assistente pessoal de voz em Python: palavra de ativação, transcrição, resposta da IA, voz e comandos no PC.",
+      "muda": "O Claude monta o projeto em etapas testáveis (texto, depois voz, depois hotword) e pede confirmação para ações perigosas.",
+      "exemplos": ["Começa meu JARVIS do zero", "Adiciona a palavra de ativação", "Faz ele abrir programas no PC"],
+      "antes": "Um código gigante que não roda.", "depois": "Módulos separados, cada etapa testada antes da próxima.",
+      "dicas": ["Nunca suba o .env com chaves para o GitHub.", "Para publicar, escolha um nome próprio: JARVIS é marca registrada."]
+    },
+    "github-helper": {
+      "categoria": "Sites e programação", "titulo": "Ajudante de GitHub",
+      "resumo": "Faz tudo de Git e GitHub: cria repositório, primeiro commit, branches, PRs, releases, GitHub Pages e segurança grátis.",
+      "muda": "O Claude cuida dos comandos do Git e liga Dependabot, secret scanning e proteção de branch.",
+      "exemplos": ["Sobe esse projeto para o GitHub", "Faz um PR com essa mudança", "Publica no GitHub Pages"],
+      "antes": "Lista de comandos para você digitar.", "depois": "Repositório criado, com segurança ligada e o link na mão.",
+      "dicas": ["Rode gh auth login uma vez.", "Nunca suba senhas ou .env."]
+    },
+    "agent-builder": {
+      "categoria": "Produtividade e PC", "titulo": "Criar agente pessoal",
+      "resumo": "Cria seus próprios agentes de IA para tarefas que se repetem, como assistente de estudos, de redes sociais ou de sites.",
+      "muda": "O Claude passa a ter especialistas que você criou e que ele chama sozinho quando o assunto aparece.",
+      "exemplos": ["Cria um agente que organiza minhas anotações no Obsidian", "Quero uma IA que monta posts para meus clientes", "Um agente revisor dos meus trabalhos"],
+      "antes": "Explicar tudo de novo a cada conversa.", "depois": "Um agente com as regras salvas, pronto para usar.",
+      "dicas": ["Descreva a tarefa e um exemplo de resultado bom.", "Comece com um agente pequeno e melhore com o uso."]
+    },
+    "pc-control": {
+      "categoria": "Produtividade e PC", "titulo": "Controlar o PC",
+      "resumo": "Faz o Claude mexer no seu computador e no Chrome logado: abrir programas, usar sites, criar contas com o mínimo de esforço seu.",
+      "muda": "O Claude sabe o que consegue fazer sozinho e o que precisa de você (senha, CAPTCHA, código do SMS).",
+      "exemplos": ["Abre o Obsidian e cria uma nota", "Cria uma conta no Canva com meu Google", "Instala a extensão do Claude no Chrome"],
+      "antes": "\"Não consigo acessar seu computador.\"", "depois": "A tarefa feita, parando só onde precisa da sua confirmação.",
+      "dicas": ["Prefira \"Continuar com o Google\" ao criar contas.", "Senha nunca vai no chat: use o gerenciador de senhas."]
+    },
+    "claude-chats": {
+      "categoria": "Produtividade e PC", "titulo": "Ler conversas do Claude",
+      "resumo": "Lê suas conversas do claude.ai pela exportação oficial, acha a que você quer e faz no Claude Code o que foi pedido lá.",
+      "muda": "Você pode começar uma ideia no celular e terminar no computador sem copiar e colar nada.",
+      "exemplos": ["Faz o que eu pedi na última conversa do Claude", "Em qual conversa eu falei do cardápio?", "Lista os pedidos daquela conversa"],
+      "antes": "Copiar e colar a conversa inteira.", "depois": "Lista dos pedidos confirmada com você e executada.",
+      "dicas": ["Exportar: claude.ai → Configurações → Privacidade → Exportar dados.", "Nunca suba a exportação para o GitHub."]
+    },
+    "session-radar": {
+      "categoria": "Produtividade e PC", "titulo": "Radar de sessões",
+      "resumo": "Mostra o que está acontecendo nas suas outras conversas do Claude Code (nuvem ou computador), resume e diz o que falta.",
+      "muda": "O Claude enxerga as outras sessões e responde \"como tá aquela conversa do site?\" sem você abrir uma por uma.",
+      "exemplos": ["O que tá acontecendo na conversa do site?", "Em qual sessão eu fiz o login?", "O que falta terminar lá?"],
+      "antes": "Abrir cada conversa para lembrar o que foi feito.", "depois": "Resumo do andamento e dos próximos passos.",
+      "dicas": ["Diga uma palavra do assunto para achar a sessão certa.", "Funciona melhor com sessões que têm título claro."]
+    },
+    "site-fortress": {
+      "categoria": "Segurança e lei", "titulo": "Fortaleza do site",
+      "resumo": "Auditoria de segurança completa do seu próprio site em 12 fases: segredos, dependências, login, pagamentos, cabeçalhos, LGPD. Corrige e prova cada correção.",
+      "muda": "O Claude testa o site como um atacante faria (só no que é seu), corrige o que achar e mostra a prova de que ficou seguro.",
+      "exemplos": ["Deixa o site da pizzaria seguro antes de publicar", "Testa meu login como hacker", "Verifica se o pagamento está certo"],
+      "antes": "\"Parece seguro.\"", "depois": "Relatório fase por fase com o que foi achado, corrigido e verificado.",
+      "dicas": ["Rode antes de todo lançamento e depois de mudanças grandes.", "Só use em sites que são seus."]
+    },
+    "legal-compliance": {
+      "categoria": "Segurança e lei", "titulo": "Site dentro da lei",
+      "resumo": "Deixa o site pronto para publicar no Brasil: política de privacidade, termos de uso, banner de cookies com consentimento real e exclusão de dados (LGPD).",
+      "muda": "O Claude escreve os textos legais para o seu caso e confere formulários e scripts de terceiros.",
+      "exemplos": ["Faz a política de privacidade do site", "Coloca o banner de cookies", "O Google pediu política, o que faço?"],
+      "antes": "Política copiada de outro site.", "depois": "Textos adaptados ao que o site realmente coleta, publicados e linkados.",
+      "dicas": ["Liste tudo o que o site coleta (formulário, login, analytics).", "Não substitui um advogado em casos complexos."]
+    },
+    "skill-hunter": {
+      "categoria": "Criar e publicar skills", "titulo": "Caçador de skills",
+      "resumo": "Procura skills, agentes e servidores MCP no GitHub, verifica a segurança e instala os bons.",
+      "muda": "O Claude ganha capacidades novas sozinho, sem instalar nada suspeito.",
+      "exemplos": ["Procura skills de edição de vídeo", "Tem alguma skill para WhatsApp?", "Atualiza minhas skills"],
+      "antes": "Procurar e copiar skills na mão.", "depois": "Skill lida, checada e instalada, com a fonte anotada.",
+      "dicas": ["Peça para ele explicar o que a skill faz antes de instalar.", "Prefira repositórios com licença e manutenção recente."]
+    },
+    "publicar-skills-github": {
+      "categoria": "Criar e publicar skills", "titulo": "Publicar skills no GitHub",
+      "resumo": "Monta e publica um repositório público de skills, como este: página de cada skill, downloads, instalação, notas e sugestões.",
+      "muda": "O Claude sabe montar uma biblioteca de skills completa e pede sua confirmação antes de publicar.",
+      "exemplos": ["Publica minhas skills no GitHub", "Atualiza o repositório com a skill nova", "Cria uma release nova"],
+      "antes": "Skills só no seu computador.", "depois": "Repositório público com downloads, explicações e avaliações.",
+      "dicas": ["Rode a checagem de segredos antes de publicar.", "Não coloque dados pessoais no repositório."]
+    },
+    "projeto-senai-desafio": {
+      "categoria": "Estudo", "titulo": "Projeto de desafio SENAI",
+      "resumo": "Estrutura projetos de desafio técnico (Grand Prix SENAI, desafios de empresa): problema, causa raiz, solução, Canvas, custos, KPIs e pitch.",
+      "muda": "O Claude organiza o projeto no formato que a banca espera, com números e premissas explícitos.",
+      "exemplos": ["Monta o Canvas do nosso projeto de estoque", "Faz o pitch de 5 minutos dividido em 4 pessoas", "Que KPIs usar para almoxarifado?"],
+      "antes": "Ideia solta sem números.", "depois": "Problema medido, causa raiz, solução, custo, retorno e pitch cronometrado.",
+      "dicas": ["Todo número estimado deve dizer a premissa.", "Faça o protótipo simples primeiro."]
+    },
+    "minecraft-construcoes": {
+      "categoria": "Jogos", "titulo": "Minecraft: construções e mods",
+      "resumo": "Ajuda com Minecraft Java modado: Litematica, schematics, conversão de Bedrock para Java, comandos seguros e conflitos entre mods.",
+      "muda": "O Claude lê seus logs, acha o mod com problema e converte construções sem perder blocos.",
+      "exemplos": ["Converte esse .mcstructure para .litematic", "Meu /fill deu limite de blocos", "Litematica e mapa usam a mesma tecla"],
+      "antes": "Tutorial genérico.", "depois": "Arquivo convertido com contagem de blocos conferida ou o conflito resolvido.",
+      "dicas": ["Faça backup do mundo antes de colar estruturas grandes.", "Baixe schematics só de sites confiáveis, nunca .exe."]
+    }
+  }
+}

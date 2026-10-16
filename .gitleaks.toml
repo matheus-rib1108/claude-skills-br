@@ -1,0 +1,10 @@
+title = "claude-skills-br"
+
+[extend]
+useDefault = true
+
+# Falso positivo: linha de boas práticas da skill site-fortress (hash de senha com argon2id/bcrypt).
+[[allowlists]]
+description = "Texto explicativo, sem credencial"
+regexTarget = "line"
+regexes = ['''Passwords: argon2id/bcrypt; rate-limit login''']
