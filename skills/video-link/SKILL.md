@@ -15,7 +15,7 @@ Output in `<out_dir>`: `transcript.txt` (timestamped speech), `frames/` (one fra
 ## Steps
 
 1. Check tools once: `yt-dlp --version && ffmpeg -version && python3 -c "import faster_whisper"`.
-   Missing → `pip install -U yt-dlp faster-whisper` and install ffmpeg
+   Missing → `pip install -U yt-dlp faster-whisper "av<17"` (PyAV 17+ quebra o faster-whisper 1.2) and install ffmpeg
    (Windows: `winget install ffmpeg`; macOS: `brew install ffmpeg`).
 2. Run the script. Use a new folder per video in the scratchpad (or `videos/<name>` if the
    user wants to keep it).

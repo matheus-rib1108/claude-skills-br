@@ -46,7 +46,7 @@ O jeito do plugin facilita atualizar depois: `/plugin marketplace update claude-
 
 | Skill | Precisa de | Instalar |
 |---|---|---|
-| `video-link` | yt-dlp, faster-whisper, ffmpeg | `pip install yt-dlp faster-whisper` e `winget install Gyan.FFmpeg` |
+| `video-link` | yt-dlp, faster-whisper, ffmpeg | `pip install yt-dlp faster-whisper "av<17"` e `winget install Gyan.FFmpeg` |
 | `photo-editor` | Pillow, OpenCV, rembg | `pip install pillow opencv-contrib-python-headless numpy rembg onnxruntime` |
 | `video-maker` | Node.js 22+, ffmpeg | [nodejs.org](https://nodejs.org) e `winget install Gyan.FFmpeg` |
 | `claude-chats`, `session-radar` | Python 3 | [python.org](https://www.python.org) |

@@ -31,7 +31,8 @@ def main():
     if Path(url).is_file():  # a video file the user sent
         video = Path(url).resolve()
     else:
-        run(["yt-dlp", *extra, "--no-playlist", "-f", "mp4/best", "-o", str(out / "video.%(ext)s"),
+        # yt-dlp from the same Python, so it works even when its .exe is not on PATH.
+        run([sys.executable, "-m", "yt_dlp", *extra, "--no-playlist", "-f", "mp4/best", "-o", str(out / "video.%(ext)s"),
              "--write-info-json", "--write-thumbnail", url])
         video = next(p for p in out.iterdir()
                      if p.stem == "video" and p.suffix not in (".json", ".jpg", ".webp", ".png"))
