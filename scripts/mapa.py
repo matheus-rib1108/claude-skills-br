@@ -36,5 +36,5 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{
   {"".join(partes)}
 </svg>
 '''
-(ROOT / "docs" / "images" / "mapa-skills.svg").write_text(svg, encoding="utf-8")
+(ROOT / "docs" / "images" / "mapa-skills.svg").write_text(svg, encoding="utf-8", newline="\n")
 print(W, H)

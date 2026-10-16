@@ -100,7 +100,7 @@ def main():
 
     for p in folders:
         frontmatter(p / "SKILL.md")
-        (p / "README.md").write_text(skill_readme(p.name, meta["skills"][p.name], owner), encoding="utf-8")
+        (p / "README.md").write_text(skill_readme(p.name, meta["skills"][p.name], owner), encoding="utf-8", newline="\n")
 
     DIST.mkdir(exist_ok=True)
     for old in DIST.glob("*.zip"):
@@ -123,7 +123,7 @@ def main():
             "skills": [f"./skills/{n}" for n in names],
         }],
     }
-    (plugin_dir / "marketplace.json").write_text(json.dumps(market, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (plugin_dir / "marketplace.json").write_text(json.dumps(market, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
     rows = []
     for cat in meta["categorias"]:
@@ -140,7 +140,7 @@ def main():
         text = readme.read_text(encoding="utf-8")
         text = re.sub(r"(<!-- TABELA:INICIO -->).*?(<!-- TABELA:FIM -->)", lambda m: f"{m.group(1)}\n{table}\n{m.group(2)}", text, flags=re.S)
         text = text.replace("SEU-USUARIO", owner)
-        readme.write_text(text, encoding="utf-8")
+        readme.write_text(text, encoding="utf-8", newline="\n")
     print(f"{len(names)} skills, {len(names) + 1} zips")
 
 
